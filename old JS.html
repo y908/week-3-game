@@ -1,14 +1,6 @@
+old JS
 
-	var computerChoices = ['a','b','c','d','e','f','g','h','i',
-	'	j','k','l','m','n','o','p','q','r','s','t','u','v','w','x',
-		'y','z'];
-
-	var wins = 0;
-	var losses = 0;
-	var guessLeft = 9;
-	var guessSoFar =
-	
-	document.onkeyup = function(event) {
+document.onkeyup = function(event) {
 		var userGuess = String.fromCharCode(event.keyCode).toLowerCase()[Math.max(0,9)];
 		var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
@@ -24,7 +16,7 @@
 		'<p>wins:' + wins + '</p>' + '<p>losses' + losses + '</p>'; 
 
 		for( var guessSoFar = 9; guessSoFar > 0; guessSoFar++){
-			document.write('<p>You guessed:' + userGuess + '</p>');
+			document.write('<p>You guessed:' + userGuess + '</p>';
 		}
 
 		if  (guessLeft < 0){
@@ -47,3 +39,30 @@
 //for( var guessSoFar = 9; guessSoFar > 0; guessSoFar++){
 // 	'<p>You guessed:' + userGuess + '</p>';
 //}
+
+
+
+
+
+old html
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Psychic Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body>
+	<div id="game">
+		<h1>The Psychic Game</h1>
+		<p>Guess what letter I'm thinking of!
+		 Enter any letter from A-Z. </p>
+	</div>
+	
+</body>
+</html>
+
+
+
