@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hangman Game</title>
+	<title>GtW Game</title>
 	
 	<!--Reset File -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -36,6 +36,8 @@
 				<div class="text-center">
 					<h3 class="panel-title">Current Word</h3>
 					<!--user guess-->
+					<p id="word">test</p>
+					<p id="guessed">test</p>
 				</div>
 			</div>			
 		</div>
@@ -49,6 +51,7 @@
 				<div class="panel-body">
 					<div class="text-center">
 						<!--Number of guesses left-->
+						<p id="counter2"></p>
 					</div>
 				</div>			
 			</div>
@@ -61,24 +64,34 @@
 				</div>
 				<div class="panel-body">
 					<div class="text-center">
-						<!--guessed letter-->
+						<p id="wrong">test</p>
+						
 					</div>
 				</div>			
 			</div>
 		</div>
 
 	<!-- Right Panel (fruits and veggies images)-->
-	<div class="col-lg-6">
-	<!--insert image links-->
-	</div>
+		<div class="col-lg-6">
+			<div class="panel panel-default">
+				  <div class="panel-heading">
+				    	<h3 class="panel-title">And the Food Item Is...</h3>
+				  </div>
+				  <div class="panel-body">
+					  <div class="text-center">
+  					 <!--insert image links-->
+  					 <img src="" class="images">
+					  </div>
+				  </div>
+			</div>
+		</div>
 	
-	</div>
-</div>
+	</div><!--closing tag for row-->
+</div> <!--Closing tag for container-->
 </body>
 </html>
 
 
 <!--
-
 1. make html lines. title, instructions, number of guess remaining, letters already guessed, current word, wins, and the word itself. 
-2. 
+2. Javascript: for loops, var, functions, ...-->
